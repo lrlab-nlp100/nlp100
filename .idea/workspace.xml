@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaef07b2-6812-4598-b528-0a4d05cd59fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20-29/q21_category_include.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20-29/q24_extract_refer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20-29/q25_extract_template.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20-29/q26_remove_emphasis.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/20-29/q27_remove_interlink.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/20-29/21_category_include.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/20-29/24_extract_refer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/20-29/25_extract_template.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/20-29/26_emphasis.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/20-29/27_internal_link.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/20-29/20_json.py" afterPath="$PROJECT_DIR$/20-29/q20_json.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/20-29/22_category_name.py" afterPath="$PROJECT_DIR$/20-29/q22_category_name.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/20-29/23_section.py" afterPath="$PROJECT_DIR$/20-29/q23_section.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/20-29/extract_from_json.py" afterPath="$PROJECT_DIR$/20-29/extract_from_json.py" />
     </list>
     <ignored path="NLP100.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,9 +97,11 @@
       <file leaf-file-name="q27_remove_interlink.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/20-29/q27_remove_interlink.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="475">
+              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+              <folding>
+                <element signature="e#16#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,8 +211,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="406" />
-    <option name="y" value="12" />
+    <option name="x" value="245" />
+    <option name="y" value="29" />
     <option name="width" value="1649" />
     <option name="height" value="1041" />
   </component>
@@ -642,8 +630,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="406" y="12" width="1649" height="1041" extended-state="0" />
-    <editor active="true" />
+    <frame x="245" y="29" width="1649" height="1041" extended-state="1" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28457284" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -651,7 +638,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.376" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.376" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24952199" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56349206" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -978,9 +965,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/20-29/q27_remove_interlink.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="475">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
