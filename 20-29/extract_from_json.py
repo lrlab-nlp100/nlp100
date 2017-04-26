@@ -17,7 +17,7 @@ def extract(title):
 
 # ↑の簡易版 イギリスについて保存してあるものを読み込むだけ
 def read():
-    with open("england.txt", "r", "utf-8") as f:
+    with open("england.txt", "r", encoding="utf-8") as f:
         return f.read()
 
 
