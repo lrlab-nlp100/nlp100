@@ -13,7 +13,7 @@ def read_cabocha():
         return list(s)
 
 
-def read_chunks():
+def read_chunks()->List[List[Chunk]]:
     lines = read_cabocha()
     ret = []  # sentence array
     buf_sentence: Sequence[Chunk] = []  # current sentence as chunk array
