@@ -13,3 +13,6 @@ class Chunk:
 
     def __repr__(self):
         return self.__str__()
+
+    def to_surface(self):
+        return "".join([m.surface for m in self.morphs])
