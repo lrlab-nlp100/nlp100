@@ -1,6 +1,7 @@
 moajo/chapter6/stanford-corenlp-full-2013-06-20/
 *.DS_Store
 moajo/.idea/
+moajo/chapter7/artist.json
 # Byte-compiled / optimized / DLL files
 __pycache__/**/*
 *.py[cod]
