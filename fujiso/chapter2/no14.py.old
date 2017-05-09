@@ -1,0 +1,98 @@
+# coding: utf-8
+u"""
+自然言語処理100本ノック
+
+14. 先頭からN行を出力
+自然数Nをコマンドライン引数などの手段で受け取り，
+入力のうち先頭のN行だけを表示せよ．
+
+
+確認にはheadコマンドを用いよ．
+
+確認コマンド:
+head:ファイルの先頭からnum行だけ出力
+head -[num] [file]
+
+$ head -5 hightemp.txt
+
+date:2016/10/02
+author:Fujita Soichiro
+"""
+
+import sys
+
+#コマンドライン引数ver.
+def cl_nlines():
+	"""
+	Extract N-lines from the beginning of specified file.
+
+	using Command Line Arguments
+
+	argv[1] filename
+	argv[2] natural number N
+	(argv[0] no14.py)
+	"""
+	try:
+		with open(sys.argv[1]) as f:
+			lines = f.readlines()
+		n = int(sys.argv[2])
+		for line in lines[:n]:		# n > len(lines) の場合、最後の要素までループが回る（エラー吐かない有能)
+			print line,
+
+	except Exception as e:
+		print e.message
+
+#関数の引数ver.
+def arg_nlines(num,file = "hightemp.txt"):
+	"""
+	Extract N-lines from specified file.
+
+	using Function Arguments
+	"""
+	 n = int(num)
+	 out =[]
+	 #例外処理省略(ホントは必要)
+	 with open(file) as f:
+	 	lines = f.readlines()
+	 	if n > len(lines) : return out	#if文でエラー処理　I/O以外はtry/exceptは控えるべきか
+
+	 	for i in range(n):
+	 		out.append(lines[i])
+	 return out
+
+#標準入力ver.
+def si_nlines():
+	"""
+	Extract N-lines from specified file.
+
+	using Standard Input
+	"""
+	out =[]
+	try:
+		print "input file:",
+		file = raw_input()
+		print "extract N-lines: N =",
+		n = int(raw_input())
+
+		with open(file) as f:
+			for i in range(n):
+				line = f.readline()
+				print line.decode('utf-8'),
+				out.append(line)
+
+	except Exception as e:
+		print "Eroor:",e.message
+
+	return out			#リストの文字化けホント嫌い
+
+
+
+if __name__ == '__main__':
+	cl_nlines()
+
+
+
+
+
+
+
