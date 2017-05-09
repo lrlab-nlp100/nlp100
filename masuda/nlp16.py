@@ -16,12 +16,16 @@ with open(argv[1], encoding="utf-8") as f:
     n = int(argv[2])
     divline = lines // n
     file_index = 0
-    dist = open("div"+file_index+".txt", "w", encoding="utf-8")
+    line_count = 0
+    dist = open("div"+str(file_index)+".txt", "w", encoding="utf-8")
     for line in f:
+        line_count += 1
         count += 1
         dist.write(line)
         if count == divline:
             dist.close()
             file_index += 1
-            dist = open("div"+file_index+".txt", "w", encoding="utf-8")
-
+            if line_count != lines:
+                dist = open("div"+str(file_index)+".txt", "w", encoding="utf-8")
+            count = 0
+    dist.close()
