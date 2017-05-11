@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 f = open('hightemp.txt','r')
 col1 = open('col1.txt','w')
 col2 = open('col2.txt','w')

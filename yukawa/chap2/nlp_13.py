@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 col1 = open('col1.txt','r')
 col2 = open('col2.txt','r')
 col12 = open('col12.txt','w')

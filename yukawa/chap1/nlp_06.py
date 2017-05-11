@@ -28,3 +28,9 @@ for word in X:
 MINUS = set(MINUS)
 print(MINUS)
 
+#AND = X&Y
+#OR = X|Y
+#MINUS = X - Y
+#print(AND)
+#print(OR)
+#print(MINUS)
