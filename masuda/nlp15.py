@@ -18,3 +18,5 @@ with open(argv[1], encoding="utf-8") as f:
         count += 1
         if count > lines - n:
             print(line, end="")
+
+# head -3 hightemp.txt

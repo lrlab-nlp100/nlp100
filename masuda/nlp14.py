@@ -9,3 +9,6 @@ if len(argv) != 3:
 with open(argv[1], encoding="utf-8") as f:
     for i in range(int(argv[2])):
         print(f.readline(), end="")
+
+# head -n 3 hightemp.txt
+# head -3 hightemp.txt

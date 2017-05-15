@@ -17,15 +17,17 @@ with open(argv[1], encoding="utf-8") as f:
     divline = lines // n
     file_index = 0
     line_count = 0
-    dist = open("div"+str(file_index)+".txt", "w", encoding="utf-8")
+    dest = open("div"+str(file_index)+".txt", "w", encoding="utf-8")
     for line in f:
         line_count += 1
         count += 1
-        dist.write(line)
+        dest.write(line)
         if count == divline:
-            dist.close()
+            dest.close()
             file_index += 1
             if line_count != lines:
-                dist = open("div"+str(file_index)+".txt", "w", encoding="utf-8")
+                dest = open("div"+str(file_index)+".txt", "w", encoding="utf-8")
             count = 0
-    dist.close()
+    dest.close()
+
+# split -l/N hightemp.txt (ファイルサイズに対してN分割(行を分割しない)
