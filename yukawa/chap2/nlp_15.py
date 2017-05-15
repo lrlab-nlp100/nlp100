@@ -1,13 +1,12 @@
 import sys
-import rfile
 arg = sys.argv
-n = arg[1]
-n = int(n)
+n = int(arg[1])
 name = arg[2]
-f = open(name,'r')
-cnt  = rfile.rf(name)
-for line in f:
-    if cnt <= n:
-        print(line[:len(line)-1])
-    cnt -= 1
-f.close()
+with open(name,'r') as f:
+    cnt = sum(1 for line in open(name))
+    for line in f:
+        if cnt <= n:
+            print(line,end="")
+        cnt -= 1
+
+# tail -n N filename

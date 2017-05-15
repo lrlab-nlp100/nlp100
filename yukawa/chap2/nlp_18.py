@@ -1,10 +1,7 @@
-f = open('hightemp.txt','r')
-l = []
-for line in f:
-   l.append(line)
-
+# -*- encode: utf-8 -*- 
+with open('hightemp.txt','r') as f:
+    l=f.readlines()
 sorted(l,key=lambda l:l[2])
+print(''.join(l))
 
-for word in l:
-    print(word)
-
+# sort -r -k3 hightemp.txt

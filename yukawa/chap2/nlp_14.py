@@ -1,14 +1,14 @@
 import sys
 arg = sys.argv
-n = arg[1]
-n = int(n)
+n = int(arg[1])
 name = arg[2]
-f = open(name,'r')
-cnt = 0
-for line in f:
-    if cnt <= n:
-        print(line[:len(line)-1])
-    else:
-        break
-    cnt += 1
-f.close()
+with open(name,'r') as f:
+    cnt = 0
+    for line in f:
+        if cnt <= n:
+            print(line,end="")
+        else:
+            break
+        cnt += 1
+
+# head -n N filename
