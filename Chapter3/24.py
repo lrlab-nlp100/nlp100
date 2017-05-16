@@ -1,5 +1,4 @@
 import re
-import nltk
 
 with open('uk.txt','r') as f:
     for line in f:
