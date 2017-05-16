@@ -1,0 +1,29 @@
+graph "g" {
+        node [fontname="arialuni.ttf", fontsize=10]
+          edge [
+            dir = forward,               //エッジの矢印を指定する
+          ];
+          "ROOT" -- "published" [label = "root"];
+"published" -- "1950" [label = "prep_in"];
+"Turing" -- "Alan" [label = "nn"];
+"published" -- "Turing" [label = "nsubj"];
+"article" -- "an" [label = "det"];
+"published" -- "article" [label = "dobj"];
+"article" -- "titled" [label = "partmod"];
+"Machinery" -- "Computing" [label = "nn"];
+"titled" -- "Machinery" [label = "dep"];
+"Machinery" -- "Intelligence" [label = "conj_and"];
+"proposed" -- "which" [label = "nsubj"];
+"article" -- "proposed" [label = "rcmod"];
+"called" -- "what" [label = "nsubjpass"];
+"called" -- "is" [label = "auxpass"];
+"called" -- "now" [label = "advmod"];
+"proposed" -- "called" [label = "ccomp"];
+"test" -- "the" [label = "det"];
+"test" -- "Turing" [label = "amod"];
+"called" -- "test" [label = "dobj"];
+"criterion" -- "a" [label = "det"];
+"called" -- "criterion" [label = "prep_as"];
+"criterion" -- "intelligence" [label = "prep_of"];
+
+        }
