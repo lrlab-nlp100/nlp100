@@ -1,7 +1,7 @@
 line_file=[]
 list=[]
 dict={}
-with open('a.txt', 'r') as f:
+with open('hightemp.txt', 'r') as f:
     for line in f:
         for word in line.strip('\n').split('\t'):
             if word:

@@ -8,4 +8,3 @@ with open("hightemp.txt","r") as file:
 
     word_url=set(word_url)
     print(word_url)
-
