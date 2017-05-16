@@ -12,31 +12,16 @@ u"""
 確認コマンド:
 
 $ sort -t$'\t' -k3,3 -r hightemp.txt
-
-date:2016/10/04
-author:Fujita Soichiro
 """
 
-import sys
 
-def sort_3column():
-	try:
-		file = sys.argv[1]
-	except:
-		file = "hightemp.txt"
+def sort_3column(file="hightemp.txt"):
+    with open(file) as f:
+        texts = f.readlines()
 
-	with open(file) as f:
-		texts = f.readlines()
+    for i in sorted(texts, key=lambda line: line.split()[2], reverse=True):
+        print(i)
 
-	for i in sorted(texts,key = lambda line:line.split()[2],reverse =True):
-		print i,
 
 if __name__ == '__main__':
-	sort_3column()
-
-"""
-lambda関数
-lambda x:y
-x=引数 y=返り値　の形で記述される
-
-"""
+    sort_3column()
