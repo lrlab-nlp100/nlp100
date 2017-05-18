@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 
 # w.writeは適切にフラッシュされるぽい
 # for line in fでループできてメモリも節約
