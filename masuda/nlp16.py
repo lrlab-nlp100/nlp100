@@ -31,3 +31,5 @@ with open(argv[1], encoding="utf-8") as f:
     dest.close()
 
 # split -l/N hightemp.txt (ファイルサイズに対してN分割(行を分割しない)
+# echo "scale=0"; `cat hightemp.txt | wc -l '/3"
+# バッククオート、bc

@@ -11,3 +11,5 @@ with open(sys.argv[1], encoding="utf-8") as f:
 
 
 # cut -b 1-3 hightemp.txt | sort | uniq -c | sort -r
+
+# python counter??
