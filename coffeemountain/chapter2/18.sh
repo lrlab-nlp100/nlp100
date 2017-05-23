@@ -1,1 +1,1 @@
-sort -r -k 3 hightemp.txt
+sort -r -k 3 -n hightemp.txt
