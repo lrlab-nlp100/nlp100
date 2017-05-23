@@ -1,0 +1,1 @@
+tail -5 hightemp.txt
