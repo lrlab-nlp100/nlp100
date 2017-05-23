@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
 from collections import Counter
-with open('English.json','r') as f:
+with open('English.txt','r') as f:
     s = ''.join(f.readlines())
     for m in re.findall(u'(?<=ファイル:)(.*?)\|',s):
         a = re.search(u'基礎情報.*\n\|',s)

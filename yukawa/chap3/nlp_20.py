@@ -9,6 +9,6 @@ with gzip.open('jawiki-country.json.gz','r') as f:
         if obj['title'] == 'イギリス':
             En_str = obj['text']
             break;
-with open('English.json','w',encoding='utf-8') as g:
+with open('English.txt','w',encoding='utf-8') as g:
     g.write(En_str)
 print(En_str)

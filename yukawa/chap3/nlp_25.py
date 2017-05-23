@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
-with open('English.json','r') as f:
+with open('English.txt','r') as f:
     s = ''.join(f.readlines())
     a = re.search(u'基礎情報.*\n\|',s)
     b = re.search(r'[}]+\n',s[a.start():])

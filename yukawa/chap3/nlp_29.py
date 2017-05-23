@@ -3,7 +3,7 @@ import urllib.request
 import json
 from collections import Counter
 import re
-with open('English.json','r') as f:
+with open('English.txt','r') as f:
     s = ''.join(f.readlines())
 for m in re.findall(u'(?<=ファイル:)(.*?)\|',s):
     a = re.search(u'基礎情報.*\n\|',s)
