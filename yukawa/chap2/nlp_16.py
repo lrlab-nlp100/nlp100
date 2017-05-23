@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 arg = sys.argv
 n = int(arg[1])
@@ -20,4 +21,5 @@ with open(name,'r') as f:
             f1.close()
             nline = 0
 f1.close()
-        
+
+# split -l $(expr $(cat hightemp.txt | wc -l) / N) hightemp.txt
