@@ -24,7 +24,6 @@ def extract_col(col_num, filename="hightemp.txt"):
 
 
 if __name__ == '__main__':
-    # よろしくないエラー処理?
     try:
         extract_col(1)
         extract_col(2)
