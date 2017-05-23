@@ -3,7 +3,6 @@ from collections import Counter
 import re
 with open('English.txt','r') as f:
     s = ''.join(f.readlines())
-for m in re.findall(u'(?<=ファイル:)(.*?)\|',s):
     a = re.search(u'基礎情報.*\n\|',s)
     b = re.search(r'[}]+\n',s[a.start():])
     l = re.split(u'\n[\|]+',s[a.end():a.start()+b.start()-1])

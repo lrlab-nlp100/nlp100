@@ -22,5 +22,5 @@ def read():
     return text
 
 if __name__ == '__main__':
-    l = func()
+    l = read()
     print(l)
