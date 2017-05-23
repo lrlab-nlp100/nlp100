@@ -101,3 +101,4 @@ ENV/
 # mkdocs documentation
 /site
 moajo/chapter8/rt*
+*pyc
