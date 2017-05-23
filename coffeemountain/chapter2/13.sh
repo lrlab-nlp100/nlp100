@@ -1,0 +1,1 @@
+paste outputfiles/col1.txt outputfiles/col2.txt

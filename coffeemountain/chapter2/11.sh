@@ -1,0 +1,1 @@
+expand -t 4 hightemp.txt
