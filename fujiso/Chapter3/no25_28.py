@@ -22,30 +22,34 @@ import re
 def get_tempdic(article):
     tempdic = dict()
     pattern = re.compile(r"^\|(.+?)\s=\s(.+)")
+    make_compiler()
     for line in article.split("\n"):
-        line = brush_up(line)
         info = re.search(pattern, line)
         if info:
             # print(info.group(0))
-            tempdic[info.group(1)] = info.group(2)
+            tempdic[info.group(1)] = brush_up(info.group(2))
     return tempdic
 
 
 def brush_up(text):
-    emp = re.compile("'{2,5}")                          # 強調は'が２−５個
-    inlink = re.compile("\[{2}(.+?)(\|(.+?)|)\]{2}")    # [[内部リンク|読み方]]
-    ref = re.compile("<(.+?)>(.+)|<(.+?)>")
-    outlink = re.compile("\[(.+?)\]")                   # [外部リンク]
-    middle = re.compile("\{\{(.+?)\}\}")                # 中カッコを消す
-
+    text = br.sub(" ", text)
     text = emp.sub("", text)                               # no26
     text = inlink.sub(r"\1", text)                         # no27
     text = ref.sub("", text)                               # no28
     text = outlink.sub(r"\1", text)                           # no28
     text = middle.sub(r"\1", text)                         # no28
-
     return text
 
 
+def make_compiler():
+    global emp, inlink, br, ref, outlink, middle
+    emp = re.compile("'{2,5}")                          # 強調は'が２−５個
+    inlink = re.compile("\[{2}(.+?)(\|(.+?)|)\]{2}")    # [[内部リンク|読み方]]
+    br = re.compile("<br/>")
+    ref = re.compile("<(.+?)>(.+)|<(.+?)>")
+    outlink = re.compile("\[(.+?)\]")                   # [外部リンク]
+    middle = re.compile("\{\{(.+?)\}\}")                # 中カッコを消す
+
+
 if __name__ == '__main__':
-    get_tempdic(read_json())
+    print(get_tempdic(read_json()))
