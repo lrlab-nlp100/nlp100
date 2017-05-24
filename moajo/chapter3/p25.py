@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 import re
-from p20 import read_eng
-from common import get_brace
+from chapter3.p20 import read_eng
+from chapter3.common import get_brace
 
 
 def main():
