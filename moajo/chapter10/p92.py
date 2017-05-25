@@ -3,6 +3,7 @@
 from p90_87 import load_vectors
 from p90_88 import get_similar_word
 
+
 def main():
     vectors = load_vectors()
     with open("p91_family.txt", "r", encoding="utf-8")as f:
