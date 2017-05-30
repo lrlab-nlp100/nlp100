@@ -14,5 +14,5 @@ for word,cnt in counter.most_common():
     high.append(cnt)
 plt.xscale('log')
 plt.yscale('log')
-plt.plot(high,range(1,len(high)+1))
+plt.plot(range(1,len(high)+1),high,'bo',markersize=3)
 plt.show()
