@@ -2,8 +2,9 @@
 # -*- coding: UTF-8 -*-
 
 '''
-31. 動詞
-動詞の表層形をすべて抽出せよ．
+
+33. サ変名詞
+サ変接続の名詞をすべて抽出せよ．
 
 '''
 
@@ -15,7 +16,6 @@ file_name='neko.txt.mecab'
 nekolist = []
 from nlp30 import mapper_neko
 
-
 if __name__ == '__main__':
     point = 0
     with open(file_name) as file:
@@ -26,5 +26,5 @@ if __name__ == '__main__':
             point += 1
 
         for a in nekolist:
-            if a['pos' or 'pos1']=='動詞':
+            if a['pos']=='名詞' and a['pos1']=='サ変接続':
                 print(a['surface'])

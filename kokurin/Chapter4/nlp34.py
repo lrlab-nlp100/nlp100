@@ -2,8 +2,9 @@
 # -*- coding: UTF-8 -*-
 
 '''
-31. 動詞
-動詞の表層形をすべて抽出せよ．
+
+34. 「AのB」
+2つの名詞が「の」で連結されている名詞句を抽出せよ．
 
 '''
 
@@ -13,8 +14,9 @@ os.chdir('/Users/kokurin/PycharmProjects/python/100本/kokurin/Chapter4/')
 import re
 file_name='neko.txt.mecab'
 nekolist = []
-from nlp30 import mapper_neko
+b=0
 
+from nlp30 import mapper_neko
 
 if __name__ == '__main__':
     point = 0
@@ -26,5 +28,9 @@ if __name__ == '__main__':
             point += 1
 
         for a in nekolist:
-            if a['pos' or 'pos1']=='動詞':
-                print(a['surface'])
+
+            if a['surface']=='の' and a['pos']=='助詞':
+                x=nekolist[b - 1]['surface']
+                y=nekolist[b + 1]['surface']
+                print(x,y)
+            b +=1
