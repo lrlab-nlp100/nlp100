@@ -2,11 +2,8 @@
 # -*- coding: UTF-8 -*-
 
 '''
-38. ヒストグラム
-単語の出現頻度のヒストグラム（横軸に出現頻度，縦軸に出現頻度をとる単語の種類数を棒グラフで表したもの）を描け．
-
-
-
+39. Zipfの法則
+単語の出現頻度順位を横軸，その出現頻度を縦軸として，両対数グラフをプロットせよ
 '''
 
 import os
@@ -38,16 +35,17 @@ if __name__ == '__main__':
             neko_words(line)
             point += 1
         fdist1 = nltk.FreqDist(neko_wordlist) #排序
-
         x_axis=[]
         y_axis=[]
+        count = []
 
         for i in fdist1.most_common():
+            count.append(i[1])
+        fdist2 = nltk.FreqDist(count)
+
+        for i in fdist2.most_common():
             x_axis.append(i[0])
             y_axis.append(i[1])
-
-        plt.bar(range(0, len(y_axis)),y_axis)
-        plt.xticks(range(0, len(x_axis)),x_axis)
+        plt.bar(range(0,len(x_axis)),y_axis)
+        plt.xticks(range(0,len(y_axis)), x_axis)
         plt.show()
-
-print('done')
