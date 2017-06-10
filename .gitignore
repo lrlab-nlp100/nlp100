@@ -101,4 +101,8 @@ ENV/
 # mkdocs documentation
 /site
 moajo/chapter8/rt*
-*pyc
+*z:
+
+# machida
+*_result
+test

@@ -5,6 +5,6 @@ with open('uk.json', 'r') as f:
     lod = json.load(f)
     text = lod['text'].split('\n')
     for t in text:
-        m = re.search('(File|ファイル):(.*?)\|', t)
+        m = re.search(r'(File|ファイル):(.*?)\|', t)
         if m:
             print(m.group(2))

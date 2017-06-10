@@ -5,5 +5,5 @@ with open('uk.json', 'r') as f:
     lod = json.load(f)
     text = lod['text'].split('\n')
     for t in text:
-        if re.match('\[\[Category:.*\]\]', t):
+        if re.match(r'\[\[Category:.*\]\]', t):
             print(t)
