@@ -6,3 +6,4 @@ for sent in all:
     for keita_dict in sent:
         if keita_dict["pos"] == "動詞":
             print(keita_dict["base"])
+
