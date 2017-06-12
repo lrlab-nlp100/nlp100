@@ -101,3 +101,8 @@ ENV/
 # mkdocs documentation
 /site
 moajo/chapter8/rt*
+*z:
+
+# machida
+*_result
+test
