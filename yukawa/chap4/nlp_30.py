@@ -7,7 +7,7 @@ def read():
         text = []
         for l in f:
             li = re.split(r'\s|,',l)
-            if len(li) > 8 and li[0] != '':
+            if li[0] != 'EOS' and li[0] != '':
                 d.update({'surface':li[0]})
                 d.update({'base':li[7]})
                 d.update({'pos':li[1]})

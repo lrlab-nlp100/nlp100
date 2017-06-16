@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 import plyvel
+cnt = 0
 my_db = plyvel.DB('/Users/haraita/Documents/Program/nlp.ldb')
-print(my_db.get('Oasis'.encode('utf-8')))
+for name,area in my_db:
+    if area == b'Japan':
+        cnt += 1
+print(cnt)
 my_db.close()
