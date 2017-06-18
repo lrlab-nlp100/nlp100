@@ -7,7 +7,8 @@ def extract_chunk(_chunk):
 
 if __name__ == '__main__':
     chunk_sentences = make_chunk_list('neko.txt.cabocha')
-    for chunk in chunk_sentences[1]:
-        # print(type(chunk.morphs))
-        print(type(chunk.morph.surface for morph in chunk.morphs))
-        # print(type(extract_chunk(chunk)))
+    chunks = chunk_sentences[1]
+
+    for chunk in chunks:
+        print(len(chunk.morphs))
+        print(chunk.morphs[1].surface)

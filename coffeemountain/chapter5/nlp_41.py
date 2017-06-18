@@ -2,13 +2,16 @@ from nlp_40 import Morph
 
 
 class Chunk:
-    def __init__(self, morphs: list, dst: str, srcs: str) -> None:
+    def __init__(self, morphs: list, dst: str, srcs: list) -> None:
         self.morphs = morphs
         self.dst = int(dst.strip("D"))
-        self.srcs = int(srcs)
+        self.srcs = srcs
 
     def _print(self):
         return print("(文節" + str(self.srcs) + "): " + "".join(morph.surface for morph in self.morphs) + "    (係り先): " + str(self.dst))
+
+    def _print_morphs_surface(self):
+        return print(type(morphs[1].surface))
 
 
 def make_chunk_list(input_file):
@@ -36,6 +39,7 @@ def make_chunk_list(input_file):
                 _chunk.morphs.append(Morph(factor1, factor2[6], factor2[0], factor2[1]))
 
         return sentences
+
 
 if __name__ == '__main__':
     chunk_sentences = make_chunk_list(input_file='neko.txt.cabocha')
