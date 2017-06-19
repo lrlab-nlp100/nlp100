@@ -21,6 +21,7 @@ for word,cnt in counter.most_common():
     high.append(cnt)
     label.append(word)
     i += 1
+print(high)
 plt.bar(range(1,11),high)
 plt.xticks(range(1,11),label)
 plt.show()

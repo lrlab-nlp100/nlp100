@@ -13,7 +13,6 @@ counter = Counter(s_l)
 p = sorted(counter.items(),key=lambda x:x[1])
 left = []
 for i in p:
-    print(i[1])
     left.append(i[1])
 plt.hist(left,bins=50,range=(1,50))
 plt.show()

@@ -15,7 +15,7 @@ d = defaultdict(list)
 f = res.split('\n')
 for line in f:
     word = re.split(r'\,|\t|\s',line)
-    if len(word) == 10:
+    if len(word) == 10 or len(word) == 8:
     	lm.append(nlp_41.nlp_40.Morph(word[0],word[7],word[1],word[2]))
     elif len(word) == 5:
         d[int(word[2][:-1])].append(int(word[1]))

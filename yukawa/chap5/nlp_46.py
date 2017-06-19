@@ -11,10 +11,10 @@ for s in l:
             if c.verb() is not None:
                 verb.append(c.verb())
             for i in c.srcs:
-                if s[int(i)].jo('') is not None:
-                    jo.append(s[int(i)].jo(''))
+                if s[int(i)].is_jo() is not None:
+                    jo.append(s[int(i)].is_jo())
                     jo.append(' ')
-                    jo_c.append(s[int(i)].jo('chunk'))
+                    jo_c.append(s[int(i)].jo())
                     jo_c.append(' ')
             if len(jo) != 0 and len(verb) != 0:
                 jo.append('\t')

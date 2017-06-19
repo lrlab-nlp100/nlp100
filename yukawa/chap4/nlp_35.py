@@ -13,4 +13,6 @@ for line in l:
                 print(''.join(noun))
                 noun = []
                 cnt = 0
-
+            elif cnt == 1:
+                cnt = 0
+                noun = []
