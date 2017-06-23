@@ -17,6 +17,16 @@ class Chunk:
             if m.pos != '記号':
                 text.append(m.surface)
         return ''.join(text)
+    
+    def mtoc_t(self,d,x):
+        text = []
+        for m in d.morphs:
+            if m.pos != '記号':
+                if m.pos == '名詞':
+                    text.append(x)
+                else:
+                    text.append(m.surface)
+        return ''.join(text)
 
     def out(self):
         for m in self.morphs:

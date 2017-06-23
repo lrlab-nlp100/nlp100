@@ -1,0 +1,2 @@
+with open("outputfiles/col1.txt", "r") as f1, open("outputfiles/col2.txt", "r") as f2, open("outputfiles/file_13.txt", "w") as f3:
+    f3.write("".join([col1.strip("\n")+"    "+col2 for col1, col2 in zip(f1, f2)]))
