@@ -3,6 +3,8 @@
 from chapter8.class_logistic_regression import LogisticRegression
 
 
+# 73. 学習
+# 72で抽出した素性を用いて，ロジスティック回帰モデルを学習せよ．
 def calc_weights(lines) -> LogisticRegression:
     lr = LogisticRegression()
     sentiments = []

@@ -4,9 +4,12 @@ import sys
 import re
 from stemming.porter2 import stem
 
-from chapter8.p71 import gen_stop_word_checker
-from chapter8.class_logistic_regression import LogisticRegression
+from p71 import gen_stop_word_checker
+from class_logistic_regression import LogisticRegression
 
+
+# 74. 予測
+# 73で学習したロジスティック回帰モデルを用い，与えられた文の極性ラベル（正例なら"+1"，負例なら"-1"）と，その予測確率を計算するプログラムを実装せよ．
 
 def main():
     with open("p72_feature.txt", "r", encoding="utf-8")as f:

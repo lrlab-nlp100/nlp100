@@ -1,13 +1,12 @@
 #! /usr/bin/env python
 import sys
-
 import re
+from typing import List
 from stemming.porter2 import stem
+from p71 import gen_stop_word_checker
+from class_logistic_regression import LogisticRegression
 
-from chapter8.p71 import gen_stop_word_checker
-from chapter8.class_logistic_regression import LogisticRegression
-
-def show_result(lines,lr):
+def show_result(lines:List[str],lr):
     res = []
     for line in lines:
         spl = line[:-1].split("\t")

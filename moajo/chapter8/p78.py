@@ -3,11 +3,11 @@ import sys
 
 import re
 from stemming.porter2 import stem
-
-from chapter8.p71 import gen_stop_word_checker
+from sklearn.model_selection import train_test_split
 from chapter8.class_logistic_regression import LogisticRegression
 from chapter8.p73 import calc_weights
 from chapter8.p76 import show_result
+
 
 def show_score(lines):
     result = list(map(lambda l: l.split("\t"), lines))  # 結果
